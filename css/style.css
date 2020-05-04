@@ -14,13 +14,17 @@
 	box-sizing: border-box;
 }
 
+body,
+html {
+	overflow-x: hidden;
+}
+
 body {
 	font-family: var(--font-family);
 	line-height: 1.4;
 	background: white;
 	color: #000;
 	font-size: 15px;
-	overflow-x: hidden;
 }
 
 a {
@@ -32,7 +36,7 @@ ul li {
 }
 
 input {
-	padding: 0.4rem 0.8rem;
+	padding: 0.7rem 0.8rem;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	outline: none;
@@ -42,21 +46,30 @@ input {
 
 /* Utility Classes */
 .container {
-	max-width: 1400px;
+	max-width: 1600px;
 	margin: auto;
 	overflow: hidden;
 	padding: 1.5rem;
 	height: 100%;
 }
 
+.menu-btn {
+	cursor: pointer;
+	position: absolute;
+	top: 35px;
+	right: 30px;
+	z-index: 2;
+	display: none;
+}
+
 .btn-red,
 .btn-blue,
 .btn-white {
 	display: inline-block;
-	padding: 10px 20px;
-	margin-right: 14px;
+	padding: 12px 25px;
+	margin-right: 18px;
 	background-color: var(--Soft-Red);
-	font-size: 11px;
+	font-size: 14px;
 	color: #fff;
 	border: 1px solid var(--Soft-Red);
 	font-weight: bold;
@@ -69,7 +82,7 @@ input {
 .btn-blue {
 	background-color: var(--Soft-Blue);
 	border: 1px solid var(--Soft-Blue);
-	padding: 15px 22px;
+	padding: 18px 25px;
 }
 
 .btn-white {
@@ -78,7 +91,7 @@ input {
 	box-shadow: 0 5px 12px -7px #777;
 	color: var(--Very-Dark-Blue);
 	border: 1px solid #e4e4e4;
-	padding: 15px 22px;
+	padding: 18px 25px;
 }
 
 .btn-red:hover {
@@ -105,41 +118,41 @@ input {
 }
 
 .h-primary {
-	font-size: 2.6rem;
+	font-size: 3rem;
 	color: var(--Very-Dark-Blue);
 	font-weight: 600;
 }
 
 .h-secondary {
-	font-size: 1.7rem;
+	font-size: 2rem;
 	color: var(--Very-Dark-Blue);
 	font-weight: 600;
 }
 
 .h-services {
-	font-size: 16px;
+	font-size: 22px;
 	font-weight: 600;
 	letter-spacing: 1.1px;
 }
 
 .para-primary {
-	font-size: 0.8rem;
+	font-size: 1.1rem;
 	color: var(--Grayish-Blue);
 	letter-spacing: 1.1px;
 }
 
 .my-1 {
-	margin: 1.2rem 0;
+	margin: 1.6rem 0;
 }
 
 .my-2 {
-	margin: 1.8rem 0;
+	margin: 2.2rem 0;
 }
 
 .icon {
 	position: relative;
-	height: 120px;
-	width: 120px;
+	height: 180px;
+	width: 180px;
 	background-color: #f0385833;
 	border-radius: 50%;
 	margin-bottom: 30px;
@@ -148,8 +161,8 @@ input {
 .icon::after {
 	content: "";
 	position: absolute;
-	width: 90px;
-	height: 90px;
+	width: 130px;
+	height: 130px;
 	background: #f0385880;
 	border-radius: 50%;
 	top: 50%;
@@ -164,14 +177,14 @@ input {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 2.4rem;
+	font-size: 3.8rem;
 	color: #b10606;
 }
 
 .fa-facebook-square,
 .fa-twitter {
 	color: #fff;
-	font-size: 20px;
+	font-size: 25px;
 }
 
 /* Accordion styles */
@@ -186,6 +199,7 @@ input {
 	width: 100%;
 	color: white;
 	overflow: hidden;
+	font-size: 18px;
 }
 
 .faq-tab-label {
@@ -246,7 +260,7 @@ input {
 .main-header {
 	position: relative;
 	height: 90vh;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 .main-header .main-nav {
@@ -258,7 +272,7 @@ input {
 
 .main-header .main-nav .logo {
 	margin-top: 5px;
-	width: 130px;
+	width: 180px;
 }
 
 .main-header .main-nav .nav-links {
@@ -269,7 +283,7 @@ input {
 
 .main-header .main-nav .nav-links li a {
 	margin-right: 22px;
-	font-size: 12px;
+	font-size: 15px;
 	font-weight: 500;
 	color: #000;
 }
@@ -284,18 +298,18 @@ input {
 .main-header .heading-content::after {
 	content: "";
 	position: absolute;
-	width: 40%;
-	height: 240px;
+	width: 32%;
+	height: 280px;
 	background-color: var(--Soft-Blue);
-	border-radius: 110px;
-	right: -150px;
-	bottom: 50px;
+	border-radius: 130px 0 0 130px;
+	right: 0;
+	bottom: 100px;
 	z-index: -1;
 }
 
 .main-header .heading-content div:nth-child(2) img {
-	width: 100%;
-	height: 100%;
+	width: 800px;
+	height: 600px;
 }
 
 
@@ -312,11 +326,11 @@ input {
 .main-features::before {
 	content: "";
 	position: absolute;
-	width: 40%;
-	height: 240px;
+	width: 32%;
+	height: 270px;
 	background-color: var(--Soft-Blue);
-	border-radius: 110px;
-	left: -130px;
+	border-radius: 0 120px 120px 0;
+	left: 0;
 	bottom: 0;
 	z-index: -1;
 }
@@ -338,7 +352,7 @@ input {
 .main-features .features-tabs .tab {
 	padding: 2rem;
 	letter-spacing: 1.1px;
-	font-size: 16px;
+	font-size: 19px;
 	border-bottom: 1px solid #ccc;
 }
 
@@ -424,13 +438,13 @@ input {
 	text-align: center;
 	border: 1px solid #eeeeee;
 	box-shadow: 0px 0px 17px 0px #e2e2e2;
-	padding: 2rem;
+	padding: 2.2rem;
 }
 
 .main-services .service-content .parent-card .card small {
-	font-size: 12px;
+	font-size: 15px;
 	color: var(--Grayish-Blue);
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
 
@@ -465,7 +479,7 @@ input {
 
 .main-faq .faq-content .faq-logo {
 	display: inline-block;
-	width: 450px;
+	width: 560px;
 }
 
 .main-faq .start-now {
@@ -482,7 +496,7 @@ input {
 	width: 100%;
 	height: 100%;
 	background-color: #6b6bf0;
-	padding: 3.6rem 0;
+	padding: 3.8rem 0;
 }
 
 .main-subscribtion .subscribtion-content {
@@ -493,13 +507,13 @@ input {
 
 
 .main-subscribtion .subscribtion-content small {
-	font-size: 13px;
+	font-size: 16px;
 	color: white;
 	letter-spacing: 1.2px;
 }
 
 .main-subscribtion .subscribtion-content .subscribtion-heading {
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	color: white;
 	margin-bottom: 50px;
 }
@@ -514,7 +528,7 @@ input {
 .main-footer {
 	width: 100%;
 	height: 100%;
-	padding: 2rem 0;
+	padding: 2.2rem 0;
 	background-color: var(--Very-Dark-Blue);
 	color: white;
 }
@@ -550,8 +564,8 @@ input {
 }
 
 .main-footer .footer-content div .footer-links li {
-	font-size: 14px;
-	margin-left: 18px;
+	font-size: 16px;
+	margin-left: 20px;
 }
 
 
@@ -561,16 +575,64 @@ input {
 
 /* Media Queries */
 @media(max-width: 500px) {
+
+	/* Responsive Hmaburger design */
+	.menu-btn {
+		display: block;
+	}
+
+	.menu-btn:hover {
+		opacity: 0.5;
+	}
+
+	.main-header .main-nav ul.nav-links {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #f3f1f1;
+		width: 70%;
+		height: 100%;
+		border-right: rgb(219, 218, 218) 2px solid;
+		opacity: 0.95;
+		padding: 30px;
+		transform: translateX(-500px);
+		transition: all 0.2s ease-out;
+	}
+
+
+	.main-header .main-nav ul.nav-links li {
+		padding: 20px;
+		border-bottom: #ccc solid 1px;
+		margin-bottom: 30px;
+		margin-top: 20px;
+	}
+
+	.main-header .main-nav ul.nav-links li a {
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	.main-header .main-nav ul.nav-links li:last-child {
+		border-bottom: 0;
+	}
+
+	.main-header .main-nav ul.nav-links.show {
+		transform: translateX(-20px);
+	}
+
+
+	/* Utility Classes */
 	.h-primary {
-		font-size: 2.2rem;
+		font-size: 2.1rem;
 	}
 
 	.h-secondary {
-		font-size: 1.6rem;
+		font-size: 1.8rem;
 	}
 
 	.h-services {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 	}
 
 	.para-primary {
@@ -586,6 +648,14 @@ input {
 		border-radius: 4px;
 		outline: none;
 		background-color: #f0f0f0;
+		margin-bottom: 10px;
+	}
+
+
+	.btn-blue {
+		background-color: var(--Soft-Blue);
+		border: 1px solid var(--Soft-Blue);
+		padding: 18px 25px;
 		margin-bottom: 10px;
 	}
 
@@ -608,15 +678,10 @@ input {
 
 
 	.main-header .main-nav {
-		margin-bottom: 15px;
+		margin-bottom: 40px;
 	}
 
-	.main-header .main-nav .nav-links {
-		display: block;
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
+
 
 	.main-header .heading-content {
 		height: 100%;
@@ -629,8 +694,8 @@ input {
 	.main-header .heading-content::after {
 		content: "";
 		position: absolute;
-		width: 65%;
-		height: 140px;
+		width: 60%;
+		height: 130px;
 		background-color: var(--Soft-Blue);
 		border-radius: 110px 0 0 110px;
 		right: 0px;
@@ -640,12 +705,12 @@ input {
 
 	.main-header .heading-content div:nth-child(1) {
 		text-align: center;
-		margin-bottom: 110px;
+		margin-bottom: 80px;
 	}
 
 	.main-header .heading-content div:nth-child(2) img {
-		width: 400px;
-		height: 300px;
+		width: 100%;
+		height: 100%;
 	}
 
 
@@ -667,7 +732,7 @@ input {
 		background-color: var(--Soft-Blue);
 		border-radius: 0 110px 110px 0;
 		left: 0px;
-		bottom: 290px;
+		bottom: 340px;
 		z-index: -1;
 	}
 
