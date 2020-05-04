@@ -344,7 +344,7 @@ input {
 
 .main-features .features-tabs .tab:hover {
 	cursor: pointer;
-	border-bottom: 2px solid var(--Soft-Red);
+	border-bottom: 4px solid var(--Soft-Red);
 }
 
 .main-features .features-content-1,
@@ -552,4 +552,351 @@ input {
 .main-footer .footer-content div .footer-links li {
 	font-size: 14px;
 	margin-left: 18px;
+}
+
+
+
+
+
+
+/* Media Queries */
+@media(max-width: 500px) {
+	.h-primary {
+		font-size: 2.2rem;
+	}
+
+	.h-secondary {
+		font-size: 1.6rem;
+	}
+
+	.h-services {
+		font-size: 1.2rem;
+	}
+
+	.para-primary {
+		font-size: 15.4px;
+	}
+
+
+	input {
+		display: block;
+		width: 100%;
+		padding: 1rem;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		outline: none;
+		background-color: #f0f0f0;
+		margin-bottom: 10px;
+	}
+
+
+	/* For accordion FAQ */
+	.faq-tabs {
+		width: 100%;
+		border-radius: 8px;
+		overflow: hidden;
+		box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+	}
+
+
+
+	.main-header {
+		position: relative;
+		height: 100vh;
+		margin-bottom: 10px;
+	}
+
+
+	.main-header .main-nav {
+		margin-bottom: 15px;
+	}
+
+	.main-header .main-nav .nav-links {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.main-header .heading-content {
+		height: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.main-header .heading-content::after {
+		content: "";
+		position: absolute;
+		width: 65%;
+		height: 140px;
+		background-color: var(--Soft-Blue);
+		border-radius: 110px 0 0 110px;
+		right: 0px;
+		top: 240px;
+		z-index: -1;
+	}
+
+	.main-header .heading-content div:nth-child(1) {
+		text-align: center;
+		margin-bottom: 110px;
+	}
+
+	.main-header .heading-content div:nth-child(2) img {
+		width: 400px;
+		height: 300px;
+	}
+
+
+
+
+	/* Main features section*/
+	.main-features {
+		position: relative;
+		height: 100%;
+		width: 100%;
+		margin-bottom: 60px;
+	}
+
+	.main-features::before {
+		content: "";
+		position: absolute;
+		width: 65%;
+		height: 140px;
+		background-color: var(--Soft-Blue);
+		border-radius: 0 110px 110px 0;
+		left: 0px;
+		bottom: 290px;
+		z-index: -1;
+	}
+
+
+	.main-features .features-heading {
+		width: 80%;
+		text-align: center;
+		margin: auto;
+		margin-bottom: 50px;
+	}
+
+
+	.main-features .features-tabs {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 70px;
+	}
+
+	.main-features .features-tabs .tab {
+		padding: 1.8rem;
+		letter-spacing: 1.1px;
+		font-size: 16px;
+		border-bottom: 1px solid #ccc;
+	}
+
+
+	.main-features .features-content-1,
+	.main-features .features-content-2,
+	.main-features .features-content-3 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: start;
+	}
+
+	.main-features .features-content-2 {
+		display: none;
+	}
+
+	.main-features .features-content-3 {
+		display: none;
+	}
+
+	.main-features .features-content-1 div:nth-child(1) img,
+	.main-features .features-content-2 div:nth-child(1) img,
+	.main-features .features-content-3 div:nth-child(1) img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.main-features .features-content-1 div:nth-child(1),
+	.main-features .features-content-2 div:nth-child(1),
+	.main-features .features-content-3 div:nth-child(1) {
+		margin-right: 0;
+	}
+
+
+	.main-features .features-content-1 div:nth-child(2),
+	.main-features .features-content-2 div:nth-child(2),
+	.main-features .features-content-3 div:nth-child(2) {
+		width: 120%;
+		padding: 1.8rem;
+		text-align: center;
+	}
+
+
+	/* Services section */
+	.main-services {
+		height: 100%;
+		width: 100%;
+		margin-bottom: 60px;
+	}
+
+	.main-services .services-heading {
+		width: 90%;
+		margin: auto;
+		text-align: center;
+		margin-bottom: 70px;
+	}
+
+
+	.main-services .service-content {
+		width: 90%;
+		margin: auto;
+	}
+
+
+	.main-services .service-content .parent-card {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 2rem;
+	}
+
+	.main-services .service-content .parent-card .card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		border: 1px solid #eeeeee;
+		box-shadow: 0px 0px 17px 0px #e2e2e2;
+		padding: 2rem;
+	}
+
+	.main-services .service-content .parent-card .card small {
+		font-size: 13px;
+		color: var(--Grayish-Blue);
+		margin-bottom: 30px;
+	}
+
+
+
+	/* FAQ Section */
+	.main-faq {
+		position: relative;
+		height: 100%;
+		width: 100%;
+		margin-bottom: 80px;
+	}
+
+	.main-faq .faq-heading {
+		width: 90%;
+		margin: auto;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+
+	.main-faq .faq-content {
+		width: 90%;
+		margin: auto;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 40px;
+	}
+
+	.main-faq .faq-content .faq-logo {
+		display: inline-block;
+		width: 300px;
+		margin-bottom: 70px;
+	}
+
+
+
+
+	/* Subscribtion Section */
+	.main-subscribtion {
+		width: 100%;
+		height: 100%;
+		background-color: #6b6bf0;
+		padding: 3.8rem 0;
+	}
+
+	.main-subscribtion .subscribtion-content {
+		width: 100%;
+		margin: auto;
+		text-align: center;
+	}
+
+
+	.main-subscribtion .subscribtion-content small {
+		font-size: 15px;
+		color: white;
+		letter-spacing: 1.2px;
+	}
+
+	.main-subscribtion .subscribtion-content .subscribtion-heading {
+		font-size: 1.8rem;
+		color: white;
+		margin-bottom: 50px;
+	}
+
+	.subscribe-form input[type=submit] {
+		padding: 0.6rem;
+		font-size: 15px;
+		letter-spacing: 1.1px;
+	}
+
+	.subscribe-form input[type=submit]:hover {
+		background-color: white;
+	}
+
+
+
+
+
+
+	/* Footer section */
+	.main-footer .footer-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+	}
+
+
+	.main-footer .footer-content div:nth-child(1) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.main-footer .footer-content div:nth-child(1) .footer-logo {
+		margin-bottom: 40px;
+	}
+
+	.main-footer .footer-content div:nth-child(2) a {
+		margin-left: 20px;
+	}
+
+	.main-footer .footer-content div .footer-links {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.main-footer .footer-content div .footer-links li {
+		font-size: 15px;
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
 }
