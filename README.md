@@ -1,10 +1,14 @@
-# Webinar Landing Page Design
+# Welcome! to the FrontEnd Part of this WEBINAR project. 👋
 
-## Welcome! Check the designs below👋
+## Check the designs below 😀
 
-**For this Frontend Part of this project, We'll be using Html, Css/Sass, React, Redux.**
+### For this Frontend Part of this project, We'll be using Html, Css/Sass, React, Redux.
 
-## Clone this and run on Live Server
+## One extra step you have to do before contributing. 🙂
+
+**1. Make a pull request by adding your name to CONTRIBUTORS.md file, after forking/cloning this project**
+
+### Clone this and run on Live Server for now.
 
 ![Design for the Landing Page in Desktop view](./designs/Design1.png)
 
