@@ -1,6 +1,9 @@
 @import url("/css/style.css");
 
-body,
-html {
-	overflow-y: scroll;
+.course-head{
+	text-align: center;
 }
+img{
+	 width: 75%;
+	 height: auto;
+ }

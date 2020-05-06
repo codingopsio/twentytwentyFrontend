@@ -259,8 +259,6 @@ input {
 /* Header */
 .main-header {
 	position: relative;
-	height: 90vh;
-	margin-bottom: 20px;
 }
 
 .main-header .main-nav {
@@ -679,9 +677,7 @@ input {
 
 	.main-header {
 		position: relative;
-		height: 100vh;
-		margin-bottom: 10px;
-	}
+		}
 
 
 	.main-header .main-nav {
