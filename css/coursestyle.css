@@ -14,7 +14,7 @@
 	font-size: 16px;
 }
 .container-1 {
-	max-width: 1600px;
+	max-width: 1680px;
 	margin: auto;
 	overflow: hidden;
 	padding: 2.5rem;
@@ -98,25 +98,6 @@
 }
 
 
-.parentcard .cocard-text .clock {
-	display: grid;
-	grid-template-columns: 100px 200px;
-	grid-template-areas: "image" "text" ;
-	justify-content: center;
-}
-
-.parentcard .cocard-text .clock-image {
-	grid-area: image;
-	background: url("../images/clock.png");
-	background-repeat: no-repeat;
-	background-size: 25%;
-	background-position: center;
-}
-
-.parentcard .cocard-text .clock-text p{
-	text-align: left;
-}
-
 .parentcard .cocard-button {
 	 grid-area: btnn;
 	 background: var(--Soft-Blue);
@@ -140,37 +121,92 @@
 }
 
 /*Media Queries*/
-@media(max-width: 1280px) {
+@media(max-width: 1600px) {
 	.main-header {
-		height: 25vh;
-		margin-bottom: 5px;
+		height: 10vh;
+		margin-bottom: 1px;
 	}
 	.container-1 {
-		max-width: 1280px;
+		max-width: 1600px;
 		margin: auto;
 		overflow: hidden;
-		padding: rem;
+		padding: 1.5rem;
 		height: 100%;
 		
 	}
 	.parentcard {
 		display: grid;
-		grid-template-columns: repeat(3,2fr);
-		gap: 2rem;
+		grid-template-columns: repeat(4,2fr);
+		gap: 4rem;
 		
 	 }
 
 	 .parentcard .cocard {
-		grid-template-columns: 230px;
+		grid-template-columns: 100%;
 		}
 	}
 		
+
+@media(max-width: 1200px) {
+		.main-header {
+			height: 10vh;
+			margin-bottom: 1px;
+		}
+		.container-1 {
+			max-width: 1600px;
+			margin: auto;
+			overflow: hidden;
+			padding: 1.5rem;
+			height: 100%;
+			
+		}
+		.parentcard {
+			display: grid;
+			grid-template-columns: repeat(3,2fr);
+			gap: 4rem;
+			
+		 }
+	
+		 .parentcard .cocard {
+			grid-template-columns: 100%;
+			}
+	}
+
+@media(max-width: 768px) {
+		.main-header {
+			height: 10vh;
+			margin-bottom: 1px;
+		}
+		.container-1 {
+			max-width: 1600px;
+			margin: auto;
+			overflow: hidden;
+			padding: 1.5rem;
+			height: 100%;
+			
+		}
+		.parentcard {
+			display: grid;
+			grid-template-columns: repeat(2,2fr);
+			gap: 3rem;
+			
+		 }
+	
+		 .parentcard .cocard {
+			grid-template-columns: 100%;
+			}
+	}
+	
+	
 @media(max-width: 500px) {
+	.main-header {
+		height: 10vh;
+		margin-bottom: 1px;
+	}
 	.container-1 {
 		max-width: 500px;
 		margin: auto;
 		overflow: hidden;
-		padding: rem;
 		height: 100%;
 		
 	}
@@ -178,11 +214,11 @@
 		display: grid;
 		grid-template-columns: repeat(1,2fr);
 		gap: 2rem;
-		
+		padding: 1rem;
 	 }
 
 	 .parentcard .cocard {
-		grid-template-columns: 230px;
+		grid-template-columns: 100%;
 		}
 	}
 
