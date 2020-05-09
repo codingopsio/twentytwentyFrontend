@@ -11,4 +11,5 @@
 .content {
     grid-column-start: 3;
     grid-column-end:4;
+    border-radius: 15px;
 }
