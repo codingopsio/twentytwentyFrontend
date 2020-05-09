@@ -1,9 +1,225 @@
-@import url("./css/style.css");
+@import url("/css/style.css");
 
-.course-head{
-	text-align: center;
+.main-header {
+	height: 10vh;
+	margin-bottom: 1px;
 }
-.card-img{
-	 width: 75%;
-	 height: auto;
+.course-head{
+	margin: 1%;
+}
+
+
+
+.course-head span{
+	font-size: 16px;
+}
+.container-1 {
+	max-width: 1680px;
+	margin: auto;
+	overflow: hidden;
+	padding: 2.5rem;
+	height: 100%;
+	
+}
+.parentcard {
+	display: grid;
+	grid-template-columns: repeat(4,2fr);
+	grid-gap: 6.5rem;
+	
  }
+.parentcard .cocard {
+	 display: grid;
+	 cursor: pointer;
+	 grid-template-columns: 300px;
+	 grid-template-rows: 210px 260px 50px;
+	 grid-template-areas: "image" "text" "btnn";
+	 justify-content: center;
+	 --font-family: "Rubik", sans-serif;
+	 border: 1px solid #eeeeee;
+	 background:white;
+	 box-shadow: 10px 10px 102px 0px rgba(229,232,255,1);
+	 text-align: center;
+ }
+
+
+
+ .parentcard .cocard-image {
+	grid-area: image;
+	background: url("../images/card-img.jpg");
+	background-size: cover;
+ }
+
+ .parentcard .cocard-image .level-btn {
+	position: relative;
+	letter-spacing: 1px;
+	border-bottom-right-radius: 6px;
+ }
+
+ .parentcard .cocard-image .level-btn p {
+	position: absolute;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	top: 8px;
+	right: 16px;
+	font-size: 18px;
+	font-weight: 300;
+	color: aliceblue;
+	text-align: right;
+	border-radius: 5px;
+	background:var(--Soft-Red);
+ } 
+
+.parentcard .cocard-text {
+	 grid-area: text;
+	 padding: 5px;
+	
+ }
+
+ .parentcard .cocard-text p {
+	color:var(--Grayish-Blue);
+	font-size: 16px;
+	font-weight: 300;
+	margin-top: 8px;
+	padding: 10px;
+	text-align: left;
+}
+
+.parentcard .cocard-text h2 {
+	margin-top: 5px;
+	font-size: 21px;
+}
+
+.parentcard .cocard-text h5 {
+	margin-top: 15px;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+
+.parentcard .cocard-button {
+	 grid-area: btnn;
+	 background: var(--Soft-Blue);
+	 border: 1px solid var(--Soft-Blue);
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 cursor: pointer;
+	 letter-spacing: 1.2px;
+	 transition: all 0.1s ease-in;
+	 font-size: 16px;
+	 color: aliceblue;
+ }
+
+.parentcard .cocard-button:hover {
+	background-color: transparent;
+	color: var(--Soft-Blue);
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 6px 9px -7px #777;
+}
+
+/*Media Queries*/
+@media(max-width: 1600px) {
+	.main-header {
+		height: 10vh;
+		margin-bottom: 1px;
+	}
+	.container-1 {
+		max-width: 1600px;
+		margin: auto;
+		overflow: hidden;
+		padding: 1.5rem;
+		height: 100%;
+		
+	}
+	.parentcard {
+		display: grid;
+		grid-template-columns: repeat(4,2fr);
+		gap: 4rem;
+		
+	 }
+
+	 .parentcard .cocard {
+		grid-template-columns: 100%;
+		}
+	}
+		
+
+@media(max-width: 1200px) {
+		.main-header {
+			height: 10vh;
+			margin-bottom: 1px;
+		}
+		.container-1 {
+			max-width: 1600px;
+			margin: auto;
+			overflow: hidden;
+			padding: 1.5rem;
+			height: 100%;
+			
+		}
+		.parentcard {
+			display: grid;
+			grid-template-columns: repeat(3,2fr);
+			gap: 4rem;
+			
+		 }
+	
+		 .parentcard .cocard {
+			grid-template-columns: 100%;
+			}
+	}
+
+@media(max-width: 768px) {
+		.main-header {
+			height: 10vh;
+			margin-bottom: 1px;
+		}
+		.container-1 {
+			max-width: 1600px;
+			margin: auto;
+			overflow: hidden;
+			padding: 1.5rem;
+			height: 100%;
+			
+		}
+		.parentcard {
+			display: grid;
+			grid-template-columns: repeat(2,2fr);
+			gap: 3rem;
+			
+		 }
+	
+		 .parentcard .cocard {
+			grid-template-columns: 100%;
+			}
+	}
+	
+	
+@media(max-width: 500px) {
+	.main-header {
+		height: 10vh;
+		margin-bottom: 1px;
+	}
+	.container-1 {
+		max-width: 500px;
+		margin: auto;
+		overflow: hidden;
+		height: 100%;
+		
+	}
+	.parentcard {
+		display: grid;
+		grid-template-columns: repeat(1,2fr);
+		gap: 2rem;
+		
+	 }
+
+	 .parentcard .cocard {
+		grid-template-columns: 100%;
+		}
+	}
+
+	
