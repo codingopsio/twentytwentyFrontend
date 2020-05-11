@@ -14,3 +14,16 @@
     background-color: grey;
     border-radius: 15px;
 }
+
+hr {
+    width: 90%;
+    text-align: left;
+}
+
+
+@media(max-width: 500px) {
+    .row {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
