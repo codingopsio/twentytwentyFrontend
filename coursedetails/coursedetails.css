@@ -5,13 +5,51 @@
 
 .desc {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
 }
 
 .content {
-    grid-column-start: 3;
-    grid-column-end:4;
+    grid-column-start: 2;
+    grid-column-end:3;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0,0.1);   /* for reference to be removed after */
+}
+
+.video-content{
+    align-self: center;
+    justify-self: center;
+    margin:auto;
+    background: #6b6bf0; /* for reference to be removed after*/
+    border-radius: 15px;
+}
+
+.badge {
+    background: #e3a705;
+    border-radius: 10px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 900;
+    color: white;
+    margin:8px;
+    padding: 2px 5px;
+    position: absolute;
+}
+
+.ratings{
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--Very-Dark-Blue);
+}
+
+.rated {
+    font-size: 1.8rem;
+}
+
+.rating-star{
+    height: 1.5rem;
+    margin: 0;
+    padding: 0 0.5rem;
 }
 
 hr {
