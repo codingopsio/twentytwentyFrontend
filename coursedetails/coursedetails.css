@@ -5,7 +5,7 @@
 
 .desc {
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     border: 1px solid #eeeeee;
     box-shadow: 0px 0px 17px 0px #e2e2e2;
     padding: 2rem;
@@ -13,11 +13,13 @@
     border-radius: 10px;
 }
 
+
 .course-time{
     margin: 2rem;
     padding: 0.5rem;
     text-align: center;
     font-size: 1.3rem;
+    font-weight: 600;
     border-radius: 15px;
     background: #fff;
     color: #008f00;
@@ -56,40 +58,40 @@
 }
 
 .content {
-    grid-column-start: 2;
-    grid-column-end:3;
+    grid-column-start: 3;
+    grid-column-end:4;
     display: flex;
     flex-direction: column;
     border: 1px solid #eeeeee;
     box-shadow: 0px 0px 17px 0px #e2e2e2;
-    padding: 2rem;
+    padding: 1rem 0.5rem;
     margin: 0.5rem;
     border-radius: 10px;
 }
 
 .video-content, .img{
-    margin: 2.2rem 0rem;
+    margin: 1.4rem 0rem 0.4rem 0rem; 
     align-self: center;
     justify-self: center;
     border-radius: 15px;
-    height: 27rem;
-    width: 48rem;
+    /* height: 27rem;
+    width: 48rem; */
 }
 
 .badge {
-    background: midnightblue;
+    background:#ffd01a;
     border-radius: 10px;
     font-family: "Rubik", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 900;
-    color: white;
+    color: #000;
     margin:8px;
-    padding: 2px 5px;
+    padding: 8px;
     position: absolute;
 }
 
 .ratings{
-    margin: 1.5rem 0;
+    margin: 1.2rem 0;
     font-size: 1.2rem;
     text-align: center;
     color: var(--Very-Dark-Blue);
@@ -122,4 +124,45 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+}
+
+.options-box{
+    padding: 0.5rem 2rem;
+    margin: 0.5rem;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: var(--Soft-Red);
+    border-radius: 10px;
+    color:#fff;
+    cursor: pointer;
+
+}
+
+.options-box:hover {
+    background-color:#fff;
+    color:var(--Soft-Red);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid var(--Soft-Red);
+}
+
+.options-box:active {
+    background-color:#fff;
+    color:var(--Soft-Red);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solidvar(--Soft-Red);
+}
+
+.content-options{
+    align-items: center;
+    text-align: center;
+}
+
+.time-img{
+    height: 1.5rem;
+    margin: 0;
+    padding: 0 0.5rem;
 }
