@@ -24,6 +24,36 @@
     border: 2px solid #008f00;
 }
 
+.course-struct{
+    margin: 0.5rem;
+    padding: 1.5rem;
+    border: 1px solid #eeeeee;
+    border-radius: 15px;
+    box-shadow: 0px 0px 17px 0px #e2e2e2;
+}
+
+.course-struct .heading{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--Very-Dark-Blue);
+}
+
+.course-struct .box{
+    padding: 0.5rem;
+    color: white;
+    background: var(--Very-Dark-Blue);
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+.course-struct .box span{
+    background: white;
+    margin: 0.2rem;
+    padding: 0.8rem 0.8rem;
+    border-radius: 5px;
+    color: var(--Very-Dark-Blue);
+}
+
 .content {
     grid-column-start: 2;
     grid-column-end:3;
@@ -37,18 +67,19 @@
 }
 
 .video-content, .img{
+    margin: 2.2rem 0rem;
     align-self: center;
     justify-self: center;
-    margin:auto;
     border-radius: 15px;
     height: 27rem;
     width: 48rem;
 }
 
 .badge {
-    background: #e3a705;
+    background: midnightblue;
     border-radius: 10px;
     font-family: "Rubik", sans-serif;
+    font-size: 1.2rem;
     font-weight: 900;
     color: white;
     margin:8px;
@@ -57,6 +88,7 @@
 }
 
 .ratings{
+    margin: 1.5rem 0;
     font-size: 1.2rem;
     text-align: center;
     color: var(--Very-Dark-Blue);
