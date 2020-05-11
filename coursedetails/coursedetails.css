@@ -48,6 +48,7 @@
 
 .course-struct .box span{
     background: white;
+    border: 1px solid var(--Grayish-Blue);
     margin: 0.2rem;
     padding: 0.8rem 0.8rem;
     border-radius: 5px;
