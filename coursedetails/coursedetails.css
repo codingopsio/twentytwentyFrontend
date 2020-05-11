@@ -6,23 +6,43 @@
 .desc {
     grid-column-start: 1;
     grid-column-end: 2;
+    border: 1px solid #eeeeee;
+    box-shadow: 0px 0px 17px 0px #e2e2e2;
+    padding: 2rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+
+.course-time{
+    margin: 2rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    background: #fff;
+    color: #008f00;
+    border: 2px solid #008f00;
 }
 
 .content {
     grid-column-start: 2;
     grid-column-end:3;
-    border-radius: 15px;
     display: flex;
     flex-direction: column;
-    background: rgba(0,0,0,0.1);   /* for reference to be removed after */
+    border: 1px solid #eeeeee;
+    box-shadow: 0px 0px 17px 0px #e2e2e2;
+    padding: 2rem;
+    margin: 0.5rem;
+    border-radius: 10px;
 }
 
-.video-content{
+.video-content, .img{
     align-self: center;
     justify-self: center;
     margin:auto;
-    background: #6b6bf0; /* for reference to be removed after*/
     border-radius: 15px;
+    height: 27rem;
+    width: 48rem;
 }
 
 .badge {
@@ -52,10 +72,16 @@
     padding: 0 0.5rem;
 }
 
-hr {
-    width: 90%;
-    text-align: left;
+.rating-star:hover{
+    height: 1.8rem;
+    margin: 0;
+    padding: 0 0.5rem;
 }
+
+/*.desc hr {*/
+/*    width: 90%;*/
+/*    text-align: left;*/
+/*}*/
 
 
 @media(max-width: 500px) {
