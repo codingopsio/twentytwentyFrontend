@@ -126,6 +126,12 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+    .desc {
+        grid-column-start: 1;
+    }
+    .content {
+        grid-column-start: 1;
+    }
 }
 
 .options-box{

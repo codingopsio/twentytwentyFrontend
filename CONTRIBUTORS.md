@@ -1,3 +1,5 @@
 -[@ayanb12](https://github.com/ayanb12/)
 -[@nknick99](https://github.com/nknick99/)
 -[@codingopsio](https://github.com/codingopsio/)
+-[@MightyPhoenix(Agnibesh)](https://github.com/MightyPhoenix/)
+-[@Akhil1998Joshi](https://github.com/Akhil1998Joshi/)
