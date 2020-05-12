@@ -1,3 +1,7 @@
+.hide-on-large{
+    display: none;
+}
+
 .row {
     display: grid;
     grid-template-columns: 5fr 7fr;
@@ -91,7 +95,7 @@
 }
 
 .ratings{
-    margin: 1.2rem 0;
+    margin: 0.2rem 0 1.5rem;
     font-size: 1.2rem;
     text-align: center;
     color: var(--Very-Dark-Blue);
@@ -122,15 +126,69 @@
 
 
 @media(max-width: 500px) {
+    .hide-on-large{
+        display: block;
+    }
     .row {
+        margin: 0;
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1fr;
+        grid-auto-flow: dense;
     }
     .desc {
         grid-column-start: 1;
+        grid-row: 2;
     }
     .content {
         grid-column-start: 1;
+        grid-row: 1;
+    }
+    .video-content, .img{
+        margin: 2rem 0rem;
+        align-self: center;
+        justify-self: center;
+        border-radius: 15px;
+        height: 16rem;
+
+    }
+    .video-content .heading{
+        margin: 2rem 0rem 0rem 0rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .ratings{
+        margin-top: 5rem;
+    }
+/*    Course Struct     */
+    .course-struct{
+        margin: 0;
+        padding: 1rem;
+
+    }
+
+    .course-struct .heading{
+        text-align: center;
+        font-size: 1.5rem;
+        color: var(--Very-Dark-Blue);
+    }
+
+    .course-struct .box{
+        padding: 0.5rem;
+        color: white;
+        background: var(--Very-Dark-Blue);
+        font-size: 0.7rem;
+        margin: 1rem 0;
+        border-radius: 5px;
+    }
+
+    .course-struct .box span{
+        background: white;
+        border: 1px solid var(--Grayish-Blue);
+        margin: 0.2rem;
+        padding: 0.8rem 0.8rem;
+        border-radius: 5px;
+        color: var(--Very-Dark-Blue);
     }
 }
 
