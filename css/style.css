@@ -595,7 +595,7 @@ input {
 
 	.main-header .main-nav ul.nav-links {
 		display: block;
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		background-color: #f3f1f1;
@@ -606,6 +606,7 @@ input {
 		padding: 30px;
 		transform: translateX(-500px);
 		transition: all 0.2s ease-out;
+		z-index: 99999;
 	}
 
 
