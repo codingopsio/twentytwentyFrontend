@@ -45,11 +45,16 @@ header {
 }
 
 .header-top {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2rem 1rem;
+  z-index: 100;
+  background: #fff;
 }
 
 .brand {
@@ -124,7 +129,7 @@ nav.open {
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
-  margin-top: 2rem;
+  margin-top: 10rem;
 }
 
 .header-bottom {
@@ -135,7 +140,8 @@ nav.open {
   position: relative;
 }
 
-.open-menu i , .toggle-courses i{
+.open-menu i,
+.toggle-courses i {
   font-size: 2.1rem;
 }
 
@@ -148,7 +154,8 @@ nav.open {
 }
 
 .open-menu i:hover,
-.close-menu i:hover, .toggle-courses {
+.close-menu i:hover,
+.toggle-courses {
   color: var(--pink);
   cursor: pointer;
 }
@@ -164,17 +171,18 @@ nav.open {
 }
 
 .search-btn,
-.sort-btn{
+.sort-btn {
   background: var(--pink);
   border: none;
   padding: 0.5rem 0.7rem;
 }
 
-.search-btn, .sort-btn {
+.search-btn,
+.sort-btn {
   border-radius: 0.3rem;
 }
 
-.sort-btn{
+.sort-btn {
   margin-left: -0.3rem;
 }
 .search-btn i,
@@ -257,9 +265,9 @@ main {
   background: #fff;
   color: #000;
   margin: 1rem auto;
-  border: 0.1rem solid rgb(232,234,237);
+  border: 0.1rem solid rgb(232, 234, 237);
   border-radius: 0.4rem;
-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .card:hover {
@@ -295,7 +303,7 @@ transition: all 0.1s;
   position: absolute;
   bottom: 1rem;
   right: 1rem;
-  background:var(--pink);
+  background: var(--pink);
   padding: 0.3rem 1rem;
   border-radius: 50%;
   color: #fff;
